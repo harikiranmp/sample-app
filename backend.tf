@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-task-eks-1"
-    key            = "statefiles/sample-app/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-task-eks-locks"
+    bucket         = "hari-tfstate-2025"
+    key            = "terraform/state.tfstate"
+    region         = "ap-south-1"
+    use_lockfile   = true
     encrypt        = true
   }
 }
